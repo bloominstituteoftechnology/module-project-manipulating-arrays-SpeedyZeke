@@ -51,8 +51,9 @@
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the characters of the string.
     function stripVowels(str) {
     let result = '';
+    str = str.toLowerCase(); // Convert to lowercase
     for (let i = 0; i < str.length; i++) {
-        if (!'aeiouAEIOU'.includes(str[i])) {
+        if (!'aeiou'.includes(str[i])) {
             result += str[i];
         }
     }
